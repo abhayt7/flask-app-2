@@ -51,3 +51,24 @@ sudo systemctl enable jenkins
 
 # Check Jenkins status to confirm running
 sudo systemctl status jenkins
+
+....................................................................................................................................................................
+
+# Step 1: Initialize git in your project directory
+git init  # Initialize a new Git repository
+
+# Step 2: Add GitHub remote repository
+git remote add origin https://github.com/abhayt7/flask-app-2.git  # Replace with your repo URL
+
+# Step 3: Add all project files
+git add .  # Stage all files for commit
+
+# Step 4: Commit your changes
+git commit -m "Initial commit with Flask app and Jenkins pipeline"
+
+# Step 5: Set main branch name
+git branch -M main  # Rename current branch to 'main'
+
+# Step 6: Push code to GitHub
+git push -u origin main  # Push to the main branch on GitHub
+
